@@ -1,4 +1,4 @@
-# 👋 hi
+# hi
 
 ### 🎓 Computer Science (Engineering) Student @ Hacettepe University  
 ### 💻 Focused on: Computer Vision, Gen AI, Model Optimization, Algorithms  
