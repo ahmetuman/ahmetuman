@@ -1,6 +1,6 @@
 # hi
 
-### 🎓 Computer Science (Engineering) Student @ Hacettepe University  
+### 🎓 Computer Science (Engineering) Graduate From Hacettepe University  
 ### 💻 Focused on: Computer Vision, Gen AI, Model Optimization, Algorithms  
 ### 📦 Tools: PyTorch · TensorFlow · FastAPI · Docker · Kubernetes · OpenCV  
 
