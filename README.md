@@ -34,6 +34,7 @@
 ### 📘 Writing  
 - ✍️ [Generative Adversarial Networks (GANs) for Data Augmentation](https://medium.com/@ahmetuman5/generative-adversarial-networks-gans-for-data-augmentation-32aa2e357c20)
 - ✍️ [Structure from Motion (SfM): Concepts and Application Using COLMAP](https://medium.com/@ahmetuman5/generative-adversarial-networks-gans-for-data-augmentation-32aa2e357c20)
+- ✍️ [How Data From Different Resources Change Outcomes and Analyzing Fake Data](https://medium.com/@ahmetuman5/generative-adversarial-networks-gans-for-data-augmentation-32aa2e357c20)
 
 ---
 
