@@ -51,7 +51,11 @@
 - Face recognition system that detects faces and searches/matches them in a database.
 - Developed a low-latency API with FastAPI for real-time recognition, used ElasticSearch and Angular.
 
-4. **PulleyValley**
+4. **Paper Branch**
+- Automated mindmap/knowledge graph React web application
+- Integrated small language models and sentence transformers using Neo4j and FastAPI with fast queries
+
+6. **Pulley Valley**
 - WebGL puzzle game focused on pulley-based mechanics.
 - Designed three original shaders and assisted with other parts of the implementation.
 
