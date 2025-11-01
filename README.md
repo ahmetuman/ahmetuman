@@ -52,7 +52,7 @@
 - Developed a low-latency API with FastAPI for real-time recognition, used ElasticSearch and Angular.
 
 4. **Paper Branch**
-- Automated mindmap/knowledge graph React web application
+- NLP focused knowledge graph/mindmap React web application
 - Integrated small language models and sentence transformers using Neo4j and FastAPI with fast queries
 
 6. **Pulley Valley**
