@@ -40,25 +40,26 @@
 
 ### 🔥 Projects
 
-1. **Tooningo**  
-- AI-powered online tool for translating comics across multiple languages.  
-- Integrated computer vision and OCR to automate text extraction and translation from images on React.
-
-2. **Fashion Image Generation – Graduation Project**  
+1. **Fashion Image Generation – Graduation Project**  
 - LLM-assisted image generation system using Stable Diffusion.
 - Optimized model with ControlNet and HieraFashion techniques.
 
-3. **HOG-based Face Recognition (BITES internship)**  
-- Face recognition system that detects faces and searches/matches them in a database.
-- Developed a low-latency API with FastAPI for real-time recognition, used ElasticSearch and Angular.
+2. **Tooningo**  
+- AI-powered online tool for translating comics across multiple languages.  
+- Integrated computer vision and OCR to automate text extraction and translation from images on React.
 
-4. **Paper Branch**
+3. **Paper Branch**
 - NLP focused knowledge graph/mindmap React web application
 - Integrated small language models and sentence transformers using Neo4j and FastAPI with fast queries
 
-6. **Pulley Valley**
+4. **Pulley Valley**
 - WebGL puzzle game focused on pulley-based mechanics.
 - Designed three original shaders and assisted with other parts of the implementation.
+
+5. **HOG-based Face Recognition (BITES internship)**  
+- Face recognition system that detects faces and searches/matches them in a database.
+- Developed a low-latency API with FastAPI for real-time recognition, used ElasticSearch and Angular.
+
 
 ---
 
