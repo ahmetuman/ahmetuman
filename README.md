@@ -4,7 +4,7 @@
 ![Open to Work](https://img.shields.io/badge/Open%20to%20Work-%E2%9C%94%20Available-28a745?style=flat&logo=linkedin&logoColor=white)
 
 ## 🎓 Computer Science (Engineering) Graduate from Hacettepe University  
-## 💻 Focused on: Computer Vision, Gen AI, Model Optimization, Algorithms  
+## 💻 Focused on: Computer Vision, Model Optimization, Algorithms, CUDA, 3D Reconstruction  
 
 ---
 ### 🔧 Tech Stack
