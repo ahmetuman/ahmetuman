@@ -4,10 +4,18 @@
 
 :root {
     --primary-color: #222222;
-    --secondary-color: #76b900;
     --text-color: #f5f5f5;
     --box-bg-color: #2d2d2d;
-    --border-color: #444444;
+    
+    --secondary-color: #00FFFF;
+    --accent2-color: #FF00FF;
+    --border-color: rgba(0, 255, 255, 0.2);
+    --border-color-accent: #FF00FF;
+    --hover-gradient: linear-gradient(90deg, #00FFFF, #FF00FF);
+
+    --dark-cyan: #001f1f;
+    --dark-magenta: #1f001f;
+    --dark-base: #111111;
 }
 
 html {
@@ -18,7 +26,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
     color: var(--text-color);
-    background-color: var(--primary-color);
+    background-color: var(--dark-base);
 }
 
 .main-nav {
@@ -36,7 +44,7 @@ body {
     text-decoration: none;
     color: var(--text-color);
     background: rgba(0, 0, 0, 0.4);
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--border-color-accent);
     margin: 5px 0;
     border-radius: 5px;
     font-weight: bold;
@@ -45,7 +53,7 @@ body {
 }
 
 .main-nav a:hover {
-    background: var(--secondary-color);
+    background: var(--hover-gradient);
     color: var(--primary-color);
     transform: translateX(-5px);
     border-color: var(--secondary-color);
@@ -68,7 +76,10 @@ body {
     padding: 40px;
     overflow: hidden;
     position: relative;
-    background-color: var(--primary-color);
+    
+    background: linear-gradient(120deg, var(--dark-cyan), var(--dark-base), var(--dark-magenta));
+    background-size: 400% 400%;
+    animation: animated-gradient 15s ease infinite;
 }
 
 .content-wrapper {
@@ -82,6 +93,7 @@ body {
     display: flex;
     flex-direction: column;
     border: 1px solid var(--border-color);
+    z-index: 10;
 }
 
 .content-wrapper h1 {
@@ -113,7 +125,6 @@ body {
     align-items: center;
     justify-content: center;
     padding: 30px;
-    border-right: 2px solid var(--secondary-color);
     background: #333333;
     border-radius: 15px 0 0 15px;
 }
@@ -126,7 +137,7 @@ body {
     margin-bottom: 25px;
     border: 6px solid var(--secondary-color);
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-    background-image: url('https://placehold.co/180x180/e0e0e0/777?text=Your+Pic');
+    background-image: url('kedi.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -144,6 +155,46 @@ body {
     font-size: 1.1rem;
     font-weight: 500;
     color: var(--text-color);
+}
+
+.cv-arrow {
+    position: absolute;
+    top: 20px;
+    left: 180px;
+    z-index: 1;
+    transform: rotate(15deg);
+    stroke: var(--secondary-color);
+}
+
+.cv-button {
+    position: absolute;
+    top: 100px;
+    left: 60px;
+    display: inline-block;
+    background-color: var(--accent2-color);
+    color: var(--text-color);
+    padding: 12px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 14px rgba(255, 0, 255, 0.4);
+    transition: all 0.3s;
+    z-index: 1;
+}
+
+.cv-button:hover {
+    background-image: var(--hover-gradient);
+    box-shadow: 0 6px 18px rgba(255, 0, 255, 0.6);
+    transform: translateY(-2px);
+}
+
+.divider-line {
+    flex-basis: 2px;
+    min-width: 2px;
+    background-color: var(--secondary-color);
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
 }
 
 .about-right {
@@ -168,15 +219,15 @@ body {
     position: relative;
     overflow: hidden;
     border-radius: 10px;
-    background: var(--primary-color);
-    border: 1px solid var(--border-color);
+    background: var(--dark-base);
+    border: 1px solid var(--border-color-accent);
 }
 
 .tech-logo {
     position: absolute;
     padding: 10px;
     background: #444444;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--border-color-accent);
     border-radius: 10px;
     white-space: nowrap;
     transition: all 0.3s;
@@ -197,11 +248,17 @@ body {
 }
 
 .tech-logo:hover {
-    background: var(--secondary-color);
-    border-color: var(--secondary-color);
+    background-image: var(--hover-gradient);
+    border-color: var(--accent2-color);
     z-index: 10;
 }
 
 .tech-logo:hover img {
-    filter: brightness(0) invert(0.1);
+    filter: none;
+}
+
+@keyframes animated-gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
