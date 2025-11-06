@@ -98,8 +98,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const data = {
         "welcome": {
-            "headline": "Hi, I'm Ahmet. Welcome to my portfolio.",
-            "subhead": "I build intelligent systems, craft robust software, and write about it."
+            "headline": "hi. welcome to my workshop.",
         },
         "socials": {
             "linkedin": "https://www.linkedin.com/in/ahmet-uman",
@@ -111,8 +110,10 @@ document.addEventListener('DOMContentLoaded', () => {
         "about": {
             "image": "kedi.jpg",
             "paragraphs": [
-                "Computer Engineering graduate specialized in computer vision, graphics, and algorithms. Hands-on experience in accelerating, deploying, and scaling AI models using TensorFlow, PyTorch, and CUDA.",
-                "Delivered production-level solutions in face recognition, image generation, OCR, and synthetic data. Skilled in CI/CD, Docker, and Linux environments with a passion for optimizing model efficiency and inference performance."
+                "I'm an AI engineer with a degree in Computer Engineering from Hacettepe University, with a special focus on computer vision, graphics, and algorithms.",
+                "My interests straddle the line between research and engineering. I love turning my research-based curiosity into solutions that work in the real world. I don't just read AI articles; I grapple with questions like, 'How can I implement this efficiently, how can I accelerate it, how can I deploy it?'",
+                "I've developed projects in areas like facial recognition, image generation, language models, Gen AI, OCR, and synthetic data generation. I'm not only good at modeling, but also at turning solutions into working systems-I spend a lot of time working with CI/CD processes, Docker environments, and Linux.",
+                "In short, I love taking complex AI ideas and turning them into fast, scalable, and effective engineering solutions. I'm currently immersed in GPU architectures and performance optimization with CUDA."
             ]
         },
         "techStack": [
@@ -350,7 +351,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const hero = document.getElementById('welcome-hero');
             const sub = document.getElementById('welcome-sub');
             if (hero && welcome.headline) typeText(hero, welcome.headline, 85);
-            if (sub && welcome.subhead) sub.textContent = welcome.subhead;
 
             const contactTitle = document.getElementById('contact-title');
             const contactDesc = document.getElementById('contact-desc');
