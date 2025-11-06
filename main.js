@@ -127,18 +127,73 @@ document.addEventListener('DOMContentLoaded', () => {
             "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
         ],
         "experience": [
-            { "title": "Artificial Intelligence Engineer Intern - Baykar Teknoloji", "date": "08/2025 – 09/2025", "desc": "Researched and implemented Gaussian Splatting techniques for synthetic data generation. Deployed and benchmarked state-of-the-art open-source repositories on GPU clusters using CUDA and PyTorch. Collaborated with AI Software Technologies Department to integrate synthetic data pipelines." },
-            { "title": "Artificial Intelligence Engineer Intern - InfoDif", "date": "06/2025 – 07/2025", "desc": "Conducted research on Word Sense Disambiguation (WSD) for semantic analysis. Implemented AI-powered Chess Bot and image detection algorithms for Sudoku puzzles using computer vision and rule-based reasoning. Supported R&D by labeling and curating image datasets." },
-            { "title": "Mental Arts Internship Training Program - BTS Group", "date": "10/2024 – 05/2025", "desc": "Participated in comprehensive training program covering AI, Data, DevOps, and Software Engineering. Optimized Docker, Kubernetes, and CI/CD pipelines for production environments." },
-            { "title": "Computer Engineering Intern - BITES Defence and Aerospace", "date": "07/2024 – 09/2024", "desc": "Designed and developed face recognition system, optimizing database query performance from 250ms to 75ms. Developed HOG-based face recognition model with Dlib and OpenCV, reducing GPU inference time by 40%. Built low-latency API with FastAPI for real-time queries." },
-            { "title": "Problem Setter & Instructor - ACM Hacettepe", "date": "11/2022 – 03/2024", "desc": "Prepared 7 algorithmic problems (2 hard, 3 medium, 2 easy) for HUPROG'24, one of Turkey's largest competitive programming contests. Taught Dynamic Programming and Graph Algorithms to 12 students." }
+            { 
+                "title": "Artificial Intelligence Engineer Intern - Baykar Teknoloji", 
+                "date": "08/2025 – 09/2025", 
+                "items": [
+                    "Researched and implemented Gaussian Splatting techniques for synthetic data generation in AI systems",
+                    "Conducted literature reviews and experimental evaluations to improve model efficiency and rendering quality",
+                    "Deployed and benchmarked state-of-the-art open-source repositories on GPU clusters, utilizing CUDA and PyTorch",
+                    "Collaborated with the AI Software Technologies Department to integrate synthetic data pipelines into existing workflows"
+                ]
+            },
+            { 
+                "title": "Artificial Intelligence Engineer Intern - InfoDif", 
+                "date": "06/2025 – 07/2025", 
+                "items": [
+                    "Conducted research on Word Sense Disambiguation (WSD) for semantic analysis",
+                    "Implemented an AI-powered Chess Bot for terminal",
+                    "Built image detection and solving algorithms for Sudoku puzzles, applying computer vision + rule-based reasoning",
+                    "Supported R&D efforts by labeling and curating image datasets, improving training data quality for vision tasks"
+                ]
+            },
+            { 
+                "title": "Mental Arts Internship Training Program - BTS Group", 
+                "date": "10/2024 – 05/2025", 
+                "items": [
+                    "Participated in training program at BTS LABS that includes AI, Data, DevOps, Software Engineering topics",
+                    "Optimized Docker, Kubernetes, CI/CD pipelines"
+                ]
+            },
+            { 
+                "title": "Computer Engineering Intern - BITES Defence and Aerospace", 
+                "date": "07/2024 – 09/2024", 
+                "items": [
+                    "Designed and developed a face recognition system and optimized database query performance from 250ms to 75ms",
+                    "Developed a HOG-based face recognition model with Dlib and OpenCV, reducing GPU inference time by 40%",
+                    "Built a low-latency API with FastAPI, optimizing the model for real-time queries",
+                    "Contributed to the integration of the Spring Boot and Angular-based web platform"
+                ]
+            },
+            { 
+                "title": "Problem Setter & Instructor - ACM Hacettepe", 
+                "date": "11/2022 – 03/2024", 
+                "items": [
+                    "Prepared 7 algorithmic problems (2 hard, 3 medium, 2 easy) for HUPROG'24, one of Turkey's largest competitive programming contests",
+                    "Taught Dynamic Programming and Graph Algorithms to 12 students"
+                ]
+            }
         ],
         "education": [
             {
-                "logo": "https://upload.wikimedia.org/wikipedia/commons/4/43/Hacettepe_University_logo.png",
+                "logo": "https://e7.pngegg.com/pngimages/467/397/png-clipart-hacettepe-university-marmara-university-chongqing-medical-university-others-thumbnail.png",
                 "university": "Hacettepe University",
                 "meta": "Bachelor's Degree in Computer Engineering • 2021",
-                "desc": "Relevant Courses: Computer Graphics, Image Processing, Machine Learning, Data Management, Theory of Computation, Data-Intensive Applications, Defense Industry 401, Computational Photography. Communities: ACM Hacettepe (RD Member), Free Software Community (Board Member), Knights Board Game Club."
+                "courses": [
+                    "Computer Graphics",
+                    "Image Processing",
+                    "Machine Learning",
+                    "Data Management",
+                    "Theory of Computation",
+                    "Data-Intensive Applications",
+                    "Defense Industry 401",
+                    "Computational Photography"
+                ],
+                "communities": [
+                    "ACM Hacettepe (RD Member)",
+                    "Free Software Community (Board Member)",
+                    "Knights Board Game Club"
+                ]
             }
         ],
         "projects": [
@@ -197,7 +252,6 @@ document.addEventListener('DOMContentLoaded', () => {
             "title": "Let's work together",
             "desc": "Open to collaborations, roles, and interesting problems. Based in Ankara, TR.",
             "email": "mailto:ahmetuman5@gmail.com?subject=Hi%20Ahmet!",
-            "phone": "+90 543 516 1931",
             "emailAddress": "ahmetuman5@gmail.com"
         }
     };
@@ -254,12 +308,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 exp.forEach(item => {
                     const wrap = document.createElement('div');
                     wrap.className = 'timeline-item';
+                    const itemsList = Array.isArray(item.items) 
+                        ? `<ul class="timeline-items">${item.items.map(i => `<li>${i}</li>`).join('')}</ul>`
+                        : `<p class="timeline-desc">${item.desc || ''}</p>`;
                     wrap.innerHTML = `
                         <div class="timeline-dot"></div>
                         <div class="timeline-content">
                             <h3 class="timeline-title">${item.title}</h3>
                             <p class="timeline-meta">${item.date}</p>
-                            <p class="timeline-desc">${item.desc}</p>
+                            ${itemsList}
                         </div>`;
                     expTimeline.appendChild(wrap);
                 });
@@ -271,12 +328,20 @@ document.addEventListener('DOMContentLoaded', () => {
                 edu.forEach(e => {
                     const wrap = document.createElement('div');
                     wrap.className = 'edu-item';
+                    const coursesList = Array.isArray(e.courses) 
+                        ? `<div class="edu-section"><strong>Relevant Courses:</strong><ul class="edu-list">${e.courses.map(c => `<li>${c}</li>`).join('')}</ul></div>`
+                        : '';
+                    const communitiesList = Array.isArray(e.communities)
+                        ? `<div class="edu-section"><strong>Communities:</strong><ul class="edu-list">${e.communities.map(c => `<li>${c}</li>`).join('')}</ul></div>`
+                        : '';
                     wrap.innerHTML = `
                         <div class="edu-logo"><img src="${e.logo}" alt="${e.university}" /></div>
                         <div class="edu-content">
                             <h3 class="edu-title">${e.university}</h3>
                             <p class="edu-meta">${e.meta}</p>
-                            <p class="edu-desc">${e.desc}</p>
+                            ${coursesList}
+                            ${communitiesList}
+                            ${e.desc ? `<p class="edu-desc">${e.desc}</p>` : ''}
                         </div>`;
                     eduTimeline.appendChild(wrap);
                 });
