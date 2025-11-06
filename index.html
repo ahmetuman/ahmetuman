@@ -11,99 +11,85 @@
     <nav class="main-nav">
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#certificates">Certificates</a>
+        <a href="#projects">Projects</a>
+        <a href="#writings">Writings</a>
         <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
     </nav>
+
+    <div class="side-actions">
+        <a id="link-linkedin" href="#" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" width="24" height="24"></a>
+        <a id="link-github" href="#" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" width="24" height="24"></a>
+        <a id="link-twitter" href="#" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg" alt="Twitter" width="24" height="24"></a>
+        <a id="link-medium" href="#" target="_blank" rel="noopener"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/></svg></a>
+    </div>
+    <a class="btn-primary cv-download" id="link-cv" href="#" target="_blank" rel="noopener">Download CV</a>
 
     <main class="fullpage-container">
 
-        <section id="about" class="page-section">
-            <div class="content-wrapper about-layout">
-                
-                <div class="about-left">
-                    <div class="profile-pic" style="background-image: url('kedi.jpg');"></div>
-                    <div class="profile-info">
-                        <h2>Ahmet Uman</h2>
-                        <h3>AI Engineer</h3>
-                    </div>
-                </div>
-
-                <div class="divider-line">
-                    <span></span>
-                    <span></span>
-                </div>
-
-                <div class="about-right">
-                    <h3>My Tech Stack</h3>
-                    <div class="tech-stack-container">
-                        <div class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch"></div>
-                        <div class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" alt="OpenCV"></div>
-                        <div class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow"></div>
-                        <div class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"></div>
-                        <div class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++"></div>
-                        <div class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" alt="Scikit-learn"></div>
-                        <div class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas"></div>
-                        <div class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" alt="NumPy"></div>
-                        <div class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" alt="Jupyter"></div>
-                        <div class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"></div>
-                        <div class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker"></div>
-                        <div class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux"></div>
-                        <div class="tech-logo"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL"></div>
-                    </div>
-                </div>
-
-            </div>
-
-            <svg class="cv-arrow" width="130" height="130" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                <path d="M 85 15 C 60 25, 20 40, 15 80 L 20 75 M 15 80 L 5 75"
-                      stroke="var(--secondary-color)" 
-                      stroke-width="5" 
-                      fill="none" 
-                      stroke-linecap="round" 
-                      stroke-linejoin="round"/>
-            </svg>
-
-            <a href="cv.pdf" target="_blank" class="cv-button">
-                Download CV
+        <section id="welcome" class="page-section welcome-section">
+            <h1 class="welcome-hero" id="welcome-hero"></h1>
+            <p class="welcome-sub" id="welcome-sub"></p>
+            <a href="#about" class="scroll-down-arrow" id="scroll-to-about">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M6 9l6 6 6-6"/>
+                </svg>
             </a>
+        </section>
 
+        <section id="about" class="page-section">
+            <h1 class="section-title">About Me</h1>
+            <div class="about-layout">
+                <img class="about-img" id="about-img" src="kedi.jpg" alt="Portrait" />
+                <div class="about-text" id="about-text"></div>
+            </div>
+            <div class="tech-strip" id="tech-strip"></div>
         </section>
 
         <section id="experience" class="page-section">
-            <div class="content-wrapper">
-                <h1>Experience</h1>
-                <div class="scrollable-content">
-                    <p>Praesent eget elit in turpis sodales viverra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec nec pellentesque orci. Integer ut ante vel odio ultrices dictum. Nulla facilisi. Aenean nec dui ut mi facilisis mattis.</p>
-                    <p>Curabitur aliquet, lacus id fermentum feugiat, magna odio facilisis ligula, et semper sem magna vel elit. Etiam sit amet vulputate justo. Sed ut felis ut est iaculis condimentum. Integer in erat et massa vestibulum facilisis.</p>
-                </div>
-            </div>
+            <h1 class="section-title">Experience</h1>
+            <div class="timeline" id="exp-timeline"></div>
         </section>
 
-        <section id="portfolio" class="page-section">
-            <div class="content-wrapper">
-                <h1>Portfolio</h1>
-                <div class="scrollable-content">
-                    <p>Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur arcu erat, accan id imperdiet et, porttitor at sem. Nulla quis lorem ut libero malesuada feugiat. Cras ultricies ligula sed magna dictum porta. Proin eget tortor risus.</p>
+        <section id="projects" class="page-section">
+            <h1 class="section-title">Projects</h1>
+            <div class="project-view">
+                <button class="carousel-btn" id="proj-prev">‹</button>
+                <div class="project-card" id="project-card">
+                    <img class="project-image" id="project-image" src="" alt="Project image" />
+                    <div>
+                        <h3 class="project-title" id="project-title"></h3>
+                        <p class="project-desc" id="project-desc"></p>
+                    </div>
                 </div>
+                <button class="carousel-btn" id="proj-next">›</button>
             </div>
+
+            
         </section>
 
-        <section id="certificates" class="page-section">
-            <div class="content-wrapper">
-                <h1>Certificates & Contests</h1>
-                <div class="scrollable-content">
-                    <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Sed porttitor lectus nibh. Curabitur aliquet quam id dui posuere blandit. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Donec rutrum congue leo eget malesuada.</p>
-                    <p>Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Proin eget tortor risus. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus.</p>
-                </div>
-            </div>
+        <section id="writings" class="page-section">
+            <h1 class="section-title">Writings</h1>
+            <div class="writings" id="writings-grid"></div>
         </section>
+
+        
 
         <section id="education" class="page-section">
-            <div class="content-wrapper">
-                <h1>Education</h1>
-                <div class="scrollable-content">
-                    <p>Pellentesque in ipsum id orci porta dapibus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Curabitur arcu erat, accan id imperdiet et, porttitor at sem.</p>
+            <h1 class="section-title">Education</h1>
+            <div class="edu-timeline" id="edu-timeline"></div>
+        </section>
+
+        <section id="contact" class="page-section">
+            <h1 class="section-title">Contact</h1>
+            <div class="project-view" style="grid-template-columns: 1fr; max-width: 600px;">
+                <div class="project-card" style="grid-template-columns: 1fr; text-align: center;">
+                    <h3 class="project-title" id="contact-title">Let's work together</h3>
+                    <p class="project-desc" id="contact-desc">Open to collaborations, roles, and interesting problems. Based in Ankara, TR.</p>
+                    <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 16px;">
+                        <a id="contact-email" class="btn-primary" href="#" style="display: inline-block;">Email me</a>
+                        <p style="margin: 0; color: #666; font-size: 0.95rem;" id="contact-phone"></p>
+                    </div>
                 </div>
             </div>
         </section>
